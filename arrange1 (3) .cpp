@@ -35,3 +35,21 @@ int main(){
 
   return 0;
 }
+
+
+
+## Optimize Solution - Time complexity o(n).
+
+void fixArray(int arr[], int n)
+{
+ 
+    for (int i = 0; i < n;)
+    {
+        if (arr[i] >= 0 && arr[i] != i)
+            arr[arr[i]] = (arr[arr[i]] + arr[i])
+                          - (arr[i] = arr[arr[i]]);
+        else
+            i++;
+    }
+}
+
