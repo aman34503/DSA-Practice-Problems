@@ -38,7 +38,7 @@ int main(){
 
 
 
-## Optimize Solution - Time complexity o(n).
+// Optimize Solution - Time complexity o(n).
 
 void fixArray(int arr[], int n)
 {
@@ -53,3 +53,16 @@ void fixArray(int arr[], int n)
     }
 }
 
+// Another Approach 
+
+ int i=0;
+    while(i<n){
+        if(arr[i] == -1 || arr[i] == i)
+            i++;
+        else {
+            int temp = arr[i];
+            arr[i] = arr[arr[i]];
+            arr[temp] = temp; 
+        }
+    }
+    return arr;
