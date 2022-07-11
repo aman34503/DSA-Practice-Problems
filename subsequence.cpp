@@ -25,8 +25,8 @@ int printsub(int ind, vector<int> &vec, int arr[],int n ){
 }
 
 int main(){
-	int arr[] = {3,1,2,546,47,234,6456};
-	int n = 7;
+	int arr[] = {3,1,2};
+	int n = 3;
 	vector<int> vec;
 	printsub(0,vec,arr,n);
 }
